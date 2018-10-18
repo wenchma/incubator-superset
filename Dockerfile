@@ -45,6 +45,9 @@ COPY docker-entrypoint.sh /usr/local/bin/
 RUN chmod +x /usr/local/bin/docker-entrypoint.sh
 RUN ln -s usr/local/bin/docker-entrypoint.sh /entrypoint.sh # backwards compat
 
+COPY docker-init.sh /usr/local/bin/superset-init.sh
+RUN chmod +x /usr/local/bin/superset-init.sh
+
 COPY ./superset ./superset
 RUN chown -R work:work $HOME
 
