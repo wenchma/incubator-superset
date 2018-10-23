@@ -657,13 +657,13 @@ appbuilder.add_view_no_menu(DashboardAddView)
 
 class LogModelView(SupersetModelView):
     datamodel = SQLAInterface(models.Log)
-    list_columns = ('user', 'action', 'dttm')
+    list_columns = ('user', 'action', 'local_dttm')
     edit_columns = ('user', 'action', 'dttm', 'json')
     base_order = ('dttm', 'desc')
     label_columns = {
         'user': _('User'),
         'action': _('Action'),
-        'dttm': _('dttm'),
+        'local_dttm': _('Time'),
         'json': _('JSON'),
     }
 
