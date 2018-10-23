@@ -10,7 +10,7 @@ from __future__ import division
 from __future__ import print_function
 from __future__ import unicode_literals
 
-from collections import defaultdict
+from collections import defaultdict, OrderedDict
 import copy
 from datetime import datetime, timedelta
 import hashlib
@@ -94,7 +94,7 @@ class BaseViz(object):
         self.process_metrics()
 
     def process_metrics(self):
-        self.metric_dict = {}
+        self.metric_dict = OrderedDict()
         fd = self.form_data
         for mkey in METRIC_KEYS:
             val = fd.get(mkey)
