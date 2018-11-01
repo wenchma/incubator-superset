@@ -44,6 +44,7 @@
     "@data-ui/event-flow": "^0.0.54",
     "@data-ui/sparkline": "^0.0.54",
     "@vx/responsive": "0.0.153",
+    "alimask": "^1.0.3",
     "babel-register": "^6.24.1",
     "bootstrap": "^3.3.6",
     "bootstrap-slider": "^10.0.0",
@@ -124,9 +125,11 @@
     "supercluster": "https://github.com/georgeke/supercluster/tarball/ac3492737e7ce98e07af679623aad452373bbc40",
     "underscore": "^1.8.3",
     "urijs": "^1.18.10",
-    "viewport-mercator-project": "^5.0.0"
+    "viewport-mercator-project": "^5.0.0",
+    "water-mark-oc": "^1.1.0"
   },
   "devDependencies": {
+    "//": "Known issues with >=4",
     "babel-cli": "^6.14.0",
     "babel-core": "^6.10.4",
     "babel-istanbul": "^0.12.2",
@@ -162,13 +165,11 @@
     "react-addons-test-utils": "^15.6.2",
     "react-test-renderer": "^15.6.2",
     "redux-mock-store": "^1.2.3",
-    "//": "known minor issues in >5.0",
     "sinon": "^4.5.0",
     "style-loader": "^0.21.0",
     "transform-loader": "^0.2.3",
     "uglifyjs-webpack-plugin": "^1.1.0",
     "url-loader": "^0.6.2",
-    "//": "Known issues with >=4",
     "webpack": "^3.10.0",
     "webpack-manifest-plugin": "2.0.3",
     "webworkify-webpack": "2.1.2"

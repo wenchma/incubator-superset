@@ -1319,6 +1319,7 @@ class Superset(BaseSupersetView):
             'slice': slc.data if slc else None,
             'standalone': standalone,
             'user_id': user_id,
+            'user_name': g.user.username,
             'forced_height': request.args.get('height'),
             'common': self.common_bootsrap_payload(),
         }
@@ -2194,6 +2195,7 @@ class Superset(BaseSupersetView):
 
         bootstrap_data = {
             'user_id': g.user.get_id(),
+            'user_name': g.user.username,
             'dashboard_data': dashboard_data,
             'datasources': {ds.uid: ds.data for ds in datasources},
             'common': self.common_bootsrap_payload(),
