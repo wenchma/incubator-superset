@@ -54,6 +54,9 @@ const defaultProps = {
   getFilters: () => ({}),
 };
 
+const chartusercontainer = document.getElementById('app');
+const bootstrap = JSON.parse(chartusercontainer.getAttribute('data-bootstrap'));
+
 class Chart extends React.PureComponent {
   constructor(props) {
     super(props);
